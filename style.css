@@ -1,0 +1,249 @@
+
+
+
+*{ 
+    box-sizing: border-box;      /*  começa aplicacao resetando estilos */
+    margin: 0;
+padding: 0;
+}
+
+
+.logo-mario{height: 200px;}
+
+
+button{cursor: pointer;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background: red;
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.celular{ }
+
+.caixamae button:hover{
+    transition: 0.3 ease-in;
+    color: black;
+    background-color: rgb(254, 255, 255);
+}
+
+.mario-luige{
+    height: 500px;
+}
+body{ height: 100vh;
+    
+}
+
+
+
+.caixaprincipal{
+
+
+    width: 50%;
+
+}
+
+.caixavideo{ 
+    position: fixed;
+    z-index: -3;
+
+
+}
+
+/*  configuracoes de video depois de ajeitar a caixa mae */
+video{position: fixed;   
+   min-height: 100%;
+   min-width: 100%;
+    top: 0;
+}
+
+
+/* 3passo pra construir site mario coloquei a caixa principal dentro da caixa mae */
+/* peguei os estilos do body e joguei na caixa mae, deixei no body so hegth 100vh */
+
+.caixamae{     
+    
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    padding: 100px;
+
+}
+
+
+.mascara{
+     height: 100%;
+       width: 100%;         
+    position: fixed;
+   top: 0;
+   background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+}
+
+p{
+   
+    font-size: 30px;
+    color: aliceblue;
+}
+
+
+
+.cabecario img{
+    
+    height: 50px;
+
+}
+
+.cabecario a{
+    color: aliceblue;
+}
+
+.cabecario{
+    
+    padding: 35px;
+    font-size: 30px;
+     gap: 40px;
+    align-items: center;
+    display: flex;
+}
+
+.cabecario a:hover  {
+    font-size:35px ;
+    color: brown;
+    transition: 0.8s;
+    cursor: pointer;
+    
+
+}
+
+.watsap{
+
+    right: 2%;
+    position: fixed;
+top: 85%;
+    height: 80px;
+}
+
+
+.formulario{
+    flex-direction: column;
+    gap: 20px;
+display: flex;
+    background-color: rgb(239, 231, 231);
+    position: fixed;
+
+    top: 30%;
+    left: -300%;
+    padding: 20px;
+    border-radius: 19px;
+    transition: left 0.6s ease-in-out;
+}
+
+
+input{
+    outline-color: red;
+    padding: 8px;
+    border: 1px solid rgb(184, 180, 180);
+
+    height: 50px;
+    border-radius: 6px;
+}
+
+
+textarea{
+
+    outline-color: red;
+    padding: 8px;
+    border: 1px solid rgb(184, 180, 180);
+    width: 270px;
+    height: 100px;
+    border-radius: 6px;
+
+}
+
+.mascara2{
+    visibility:hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(252,252,252,1) 0%, rgba(0,0,0,0.7847514005602241) 0%);
+    transition: 0.8 ease-out;
+
+
+}
+
+
+.insagram{
+
+    right: 8%;
+    position: fixed;
+top: 84%;
+    height: 95px;
+
+    
+}
+
+
+
+
+    
+/* 
+inicial vai ser
+top 30%
+left-300px */
+
+/* final
+top 30%
+left50%
+ transform:translate(-50%) */
+
+
+
+ @media (max-width:1100px){
+
+    p{display: none;}
+
+
+
+    .caixamae{display: flex;
+        flex-direction: column;
+        padding-left:10px ;}
+        
+        
+       
+
+        .logo-mario{height: 100px;
+        
+        
+        }
+
+        button{
+
+            cursor: pointer;
+                font-size: 10px;
+                color: rgb(0, 0, 0);
+                background: red;
+                border-radius: 8px;
+                border: none;
+                width: 150px;
+                height: 25px;
+                font-weight: bold;
+                text-transform: uppercase;
+
+
+        }
+
+
+        .mario-luige{
+            height: 270px;
+        }
+            
+        
+
+ }
